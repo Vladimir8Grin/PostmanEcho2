@@ -17,7 +17,7 @@ public class MobileBankApiTest {
                 .post("/post")
                 .then()
                 .statusCode(200)
-                .body(containsString("Project"));
+                .body(containsString("Проект"));
 
     }
 }
