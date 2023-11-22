@@ -7,18 +7,18 @@ import static org.hamcrest.Matchers.containsString;
 
 public class MobileBankApiTest {
 
-        @Test
-        void shouldReturnDemoAccounts() {
-            given()
-                    .baseUri("https://postman-echo.com")
-                    .contentType("text/plain; charset=UTF-8")
-                    .body("Проект")
-                    .when()
-                    .post("/post")
-                    .then()
-                    .statusCode(200)
-                    .body(containsString("Проект"));
+    @Test
+    void shouldReturnDemoAccounts() {
+        given()
+                .baseUri("https://postman-echo.com")
+                .contentType("text/plain; charset=UTF-8")
+                .body("Проект")
+                .when()
+                .post("/post")
+                .then()
+                .statusCode(200)
+                .body(containsString("Project"));
 
-        }
     }
+}
 
